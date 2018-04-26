@@ -1,0 +1,8 @@
+@mixin font-size($px) {
+  font-size: rem-calc($px);
+}
+
+@function rem-calc($px){
+  $rem: ($px / 1.6) / 10;
+  @return $rem + rem;
+}

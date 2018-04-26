@@ -1,0 +1,113 @@
+.hero {
+  color: $white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  @include mobile {
+    text-align: left;
+  }
+
+  .hero-body {
+    z-index: 10;
+    padding-top: rem-calc(70);
+
+    @include tablet {
+      padding-top: rem-calc(100);
+      padding-bottom: rem-calc(180);
+    }
+    @include fullhd {
+      padding-top: rem-calc(130);
+      padding-bottom: rem-calc(210);
+    }
+  }
+  .title,
+  .subtitle {
+    color: $white;
+  }
+  .title {
+    font-weight: bold;
+    line-height: rem-calc(45);
+    margin-bottom: rem-calc(10);
+
+    span {
+      display: block;
+      @include tablet {
+        display: inline;
+      }
+    }
+  }
+  .subtitle {
+    opacity: 0.7;
+    font-size: rem-calc(18);
+    line-height: rem-calc(24);
+    padding-right: rem-calc(130);
+
+    @include tablet {
+      font-size: rem-calc(22);
+      padding-right: 0;
+    }
+  }
+  .button {
+    // font-size: rem-calc(18);
+    // padding-left: rem-calc(25);
+    // padding-right: rem-calc(25);
+    // height: rem-calc(50);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14);
+  }
+
+  .input {
+    border: 0;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14);
+    height: rem-calc(50);
+    font-size: rem-calc(18);
+    padding-left: rem-calc(20);
+    padding-right: rem-calc(20);
+  }
+
+  .notification {
+    margin-bottom: 1.5rem;
+  }
+
+  .field {
+    margin-bottom: 0;
+
+    @include mobile {
+      display: block;
+    }
+
+    &.has-addons {
+      .control {
+        &:first-child {
+          .input {
+            @include mobile {
+              border-top-right-radius: 3px;
+              border-bottom-right-radius: 3px;
+            }
+          }
+        }
+        &:last-child {
+          @include mobile {
+            text-align: center;
+          }
+
+          .button {
+            @include mobile {
+              margin-top: rem-calc(10);
+              border-top-left-radius: 3px;
+              border-bottom-left-radius: 3px;
+              display: block;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    
+  }
+
+  #mce-info {
+    margin-top: 1.5rem;
+  }
+}

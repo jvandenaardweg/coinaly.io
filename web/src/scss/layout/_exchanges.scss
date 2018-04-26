@@ -1,0 +1,31 @@
+.exchanges {
+  @include mobile {
+    padding-left: rem-calc(10);
+    padding-right: rem-calc(10);
+  }
+
+  img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.5;
+    height: inherit;
+  }
+
+  .exchanges-list {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: rem-calc(30);
+
+    > div {
+      display: flex;
+      flex-direction: row;
+      height: rem-calc(50);
+
+      @include mobile {
+        height: rem-calc(30);
+      }
+    }
+  }
+}

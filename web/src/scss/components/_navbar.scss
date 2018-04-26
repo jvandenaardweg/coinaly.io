@@ -1,0 +1,14 @@
+.navbar-burger span {
+    height: 2px;
+}
+
+.navbar-item {
+    @include desktop {
+        font-weight: bold;
+        font-size: rem-calc(18);
+    }
+}
+
+.navbar-end {
+    padding-right: rem-calc(20);
+}

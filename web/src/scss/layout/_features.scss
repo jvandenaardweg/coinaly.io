@@ -1,0 +1,64 @@
+.features {
+  position: relative;
+  @include mobile {
+    border-top: 1px $light solid;
+  }
+
+  &.features--second {
+    .deco {
+      left: 0;
+      right: auto;
+      transform: rotate(180deg);
+    }
+  }
+  .deco {
+    top: -10vw;
+  }
+  .feature__visual {
+    @include tablet {
+      margin-top: -200px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .feature__visual-markets {
+      width: 100%;
+      max-width: rem-calc(300);
+      margin: 0 auto;
+      margin-top: rem-calc(50);
+
+      @include tablet {
+        margin-top: rem-calc(70);
+        max-width: rem-calc(320);
+      }
+    }
+  }
+  .features__header {
+    margin-bottom: 1rem;
+
+    .title {
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      @include mobile {
+        font-size: rem-calc(30);
+      }
+    }
+    strong {
+      font-size: rem-calc(20);
+      line-height: rem-calc(32);
+      font-weight: normal;
+    }
+  }
+  .feature {
+    margin-bottom: 2rem;
+    .title {
+      margin-bottom: rem-calc(2);
+    }
+    p {
+      color: #757575;
+      font-size: rem-calc(17);
+    }
+  }
+}

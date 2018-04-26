@@ -1,0 +1,15 @@
+.security {
+  background-color: #173B61;
+    color: $white;
+
+    .title {
+        color: $white;
+        font-weight: bold;
+        // margin-bottom: 0;
+    }
+
+    .subtitle {
+        color: $white;
+        opacity: 0.8;
+    }
+}

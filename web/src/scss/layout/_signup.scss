@@ -1,0 +1,27 @@
+.signup {
+  @include mobile {
+    border-top: 0;
+  }
+  
+  #mce-responses {
+    a {
+      color: $white;
+      text-decoration: underline;
+    }
+  }
+
+  .title {
+    font-weight: bold;
+  }
+
+  .button {
+    padding-left: rem-calc(30);
+    padding-right: rem-calc(30);
+  }
+
+  .notification {
+    &:last-child {
+      margin-bottom: 1.5rem;
+    }
+  }
+}

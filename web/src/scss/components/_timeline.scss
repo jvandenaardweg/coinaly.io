@@ -1,0 +1,18 @@
+.timeline {
+  margin-top: rem-calc(50);
+
+  .timeline-item {
+    .timeline-content {
+      p {
+        color: #757575;
+        font-size: rem-calc(17);
+      }
+      p.heading {
+        font-weight: bold;
+        margin-bottom: 0;
+        opacity: 1;
+        color: $black;
+      }
+    }
+  }
+}

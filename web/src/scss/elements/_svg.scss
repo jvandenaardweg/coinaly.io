@@ -1,0 +1,47 @@
+.svg-markets {
+  max-width: 344px;
+}
+
+.svg-balances,
+.svg-history {
+  max-width: 380px;
+  margin-bottom: 30px;
+}
+
+
+.svg-rocket {
+  position: absolute;
+  margin: auto;
+  left: -90px;
+  right: 0;
+  width: 750px;
+  bottom: 0;
+  z-index: 1;
+
+  @include tablet {
+    bottom: -70px;
+    width: 845px;
+    left: -400px;
+    right: 0;
+  }
+
+  @media screen and (max-width: 320px) {
+    left: -120px;
+  }
+}
+
+
+.svg-graph {
+  position: absolute;
+  width: 3000px;
+  left: 0;
+  right: 0;
+  bottom: 150px;
+  margin: auto;
+  opacity: 0.2;
+  transform: rotate(-5deg);
+
+  @include mobile {
+    display: none;
+  }
+}

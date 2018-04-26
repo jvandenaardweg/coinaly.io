@@ -2,4 +2,7 @@
 node_modules
 npm-debug.log
 bower_components
-*.swp
+dist
+.sass-cache
+.awspublish*
+config.json
