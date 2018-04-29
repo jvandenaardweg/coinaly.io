@@ -7,7 +7,7 @@ const MinifyPlugin = require('babel-minify-webpack-plugin')
 const HtmlCriticalPlugin = require("html-critical-webpack-plugin")
 
 const extractSass = new ExtractTextPlugin({
-  filename: 'css/[name].[contenthash].css',
+  filename: 'css/[name].[hash].css',
   disable: process.env.NODE_ENV === 'development'
 })
 
